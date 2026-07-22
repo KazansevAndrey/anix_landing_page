@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b10">
+  <meta name="description" content="Anix — персональная ИИ-память: заметки, умный поиск, анализ мыслей и живые инсайты в одном приложении.">
+  <title>Anix — память, которая думает вместе с тобой</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Anix — на главную">
+      <img src="assets/anix-logo.png" alt="Логотип Anix">
+      <span>ANIX</span>
+    </a>
+    <nav aria-label="Главная навигация">
+      <a href="#possibilities">Возможности</a>
+      <a href="#inside">Как работает</a>
+      <a href="#screens">Приложение</a>
+    </nav>
+    <a class="header-cta" href="#access">В закрытый тест <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><i></i> Закрытое тестирование · 2026</div>
+        <h1>Превращайте поток заметок<br><span>в историю вашего развития.</span></h1>
+        <p class="hero-lead">Записывай мысли голосом или текстом. Anix сохранит их, найдёт нужное и поможет разобраться в своих заметках.</p>
+        <div class="hero-actions">
+          <a class="button primary magnetic" href="#access">Получить ранний доступ <b>↗</b></a>
+          <a class="button ghost" href="#demo">Посмотреть в деле <span>↓</span></a>
+        </div>
+        <div class="trust-line">
+          <div class="mini-orbit"><span></span><span></span><span></span></div>
+          <p><strong>Все мысли в одном месте.</strong><br>Простой чат, заметки и понятные выводы.</p>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="1">
+        <div class="orbital orbital-one"></div><div class="orbital orbital-two"></div>
+        <div class="core-glow"></div>
+        <img class="hero-logo" src="assets/anix-logo.png" alt="Anix">
+        <div class="float-card card-memory"><span>✦</span><div><small>В памяти</small><strong>327 заметок</strong></div></div>
+        <div class="float-card card-insight"><span>↗</span><div><small>Найден новый паттерн</small><strong>Ритм продуктивности</strong></div></div>
+        <div class="float-card card-online"><i></i> Anix онлайн</div>
+      </div>
+      <div class="hero-index">01 — ЛИЧНАЯ ИИ-ПАМЯТЬ</div>
+    </section>
+
+    <section class="ticker" aria-label="Возможности Anix">
+      <div class="ticker-track"><span>ГОЛОСОВЫЕ ЗАМЕТКИ</span><i>✦</i><span>СМЫСЛОВОЙ ПОИСК</span><i>✦</i><span>ГЛУБОКИЙ АНАЛИЗ</span><i>✦</i><span>ЛИЧНЫЕ ИНСАЙТЫ</span><i>✦</i><span>ГОЛОСОВЫЕ ЗАМЕТКИ</span><i>✦</i><span>СМЫСЛОВОЙ ПОИСК</span><i>✦</i><span>ГЛУБОКИЙ АНАЛИЗ</span><i>✦</i><span>ЛИЧНЫЕ ИНСАЙТЫ</span></div>
+    </section>
+
+    <section id="possibilities" class="section-shell statement reveal">
+      <p class="section-label">02 — ЗАЧЕМ ANIX</p>
+      <h2>Записал мысль.<br><em>Нашёл, когда понадобилась.</em></h2>
+      <div class="statement-grid">
+        <p>Идеи часто остаются в разных чатах и файлах. Потом их сложно найти и ещё сложнее собрать вместе.</p>
+        <p>В Anix достаточно написать или сказать мысль. Приложение сохранит её и поможет вернуться к ней позже.</p>
+      </div>
+    </section>
+
+    <section class="features section-shell">
+      <article class="feature-card feature-large reveal">
+        <div class="feature-num">01</div>
+        <div><span class="chip blue">ЗАМЕТКИ</span><h3>Записывай как удобно.</h3><p>Пиши в чат или используй голос. Anix создаст заметку, дополнит её или исправит текст по твоей просьбе.</p></div>
+        <div class="chat-demo" id="demo">
+          <div class="chat-bubble user">Создай заметку с планами на сегодня.</div>
+          <div class="chat-bubble anix"><img src="assets/anix-logo.png" alt=""><span>Готово. Создал заметку — сможешь дополнить её позже.</span></div>
+          <div class="result-pill">＋ &nbsp; Заметка создана</div>
+        </div>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-num">02</div><span class="chip violet">НАХОДИ</span>
+        <h3>Находи нужное по смыслу.</h3>
+        <p>Опиши, что ищешь. Anix найдёт подходящие заметки, даже если ты забыл их название.</p>
+        <div class="semantic-viz"><span>твоя мысль</span><i></i><span>связь</span><i></i><span>нужная заметка</span></div>
+      </article>
+
+      <article class="feature-card accent-card reveal" data-delay="1">
+        <div class="feature-num">03</div><span class="chip mint">АНАЛИЗ И ИНСАЙТЫ</span>
+        <h3>Понимай, что происходит.</h3>
+        <p>Инсайты коротко показывают важные изменения и повторяющиеся темы. Анализ подробно разбирает выбранный период или вопрос и прикладывает заметки-источники.</p>
+        <div class="analysis-mini"><div><b>Твой год в заметках</b><span>327 источников</span></div><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+      </article>
+    </section>
+
+    <section class="product-focus section-shell">
+      <article class="focus-panel insights-focus reveal">
+        <div class="focus-copy">
+          <p class="section-label">03 — ИНСАЙТЫ</p>
+          <span class="chip violet">КОРОТКО И ПО ДЕЛУ</span>
+          <h2>Замечай важное<br>в своих записях.</h2>
+          <p>Anix регулярно просматривает новые заметки и находит повторяющиеся темы, изменения и полезные связи.</p>
+          <ul><li>Короткие выводы за неделю</li><li>Темы, к которым ты часто возвращаешься</li><li>Напоминания о важных мыслях</li></ul>
+        </div>
+        <div class="focus-phone"><img src="assets/screens/insight-example.jpg" alt="Пример персонального инсайта Anix"><span>Инсайты можно смотреть за день, неделю, месяц или год</span></div>
+      </article>
+
+      <article class="focus-panel analysis-focus reveal">
+        <div class="focus-phone"><img src="assets/screens/analysis-result.jpg" alt="Анализ заметок в Anix"><span>Каждый вывод можно проверить по источникам</span></div>
+        <div class="focus-copy">
+          <p class="section-label">04 — АНАЛИЗ</p>
+          <span class="chip mint">ПОДРОБНЫЙ РАЗБОР</span>
+          <h2>Разбери неделю,<br>проект или год.</h2>
+          <p>Задай вопрос и выбери период. Anix изучит подходящие заметки, соберёт общий вывод и покажет записи, на которых он основан.</p>
+          <ul><li>Анализ по твоему вопросу</li><li>Работа с большим архивом заметок</li><li>Список использованных источников</li></ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="inside" class="how section-shell">
+      <div class="how-title reveal"><p class="section-label">05 — КАК ЭТО РАБОТАЕТ</p><h2>Три простых<br><span>шага.</span></h2></div>
+      <div class="steps">
+        <article class="step reveal"><span>01</span><div class="step-icon">⌁</div><h3>Записываешь</h3><p>Отправляешь текст или голосовое сообщение.</p></article>
+        <article class="step reveal"><span>02</span><div class="step-icon">◉</div><h3>Anix сохраняет</h3><p>Создаёт заметку и связывает её с похожими записями.</p></article>
+        <article class="step reveal"><span>03</span><div class="step-icon">✦</div><h3>Получаешь пользу</h3><p>Ищешь заметки, читаешь инсайты и запускаешь анализ.</p></article>
+      </div>
+      <div class="principles reveal"><div><b>Экспорт</b><span>Скачивай заметки в Markdown или PDF.</span></div><div><b>Контекст</b><span>Выбирай заметку, с которой хочешь работать.</span></div><div><b>История версий</b><span>Возвращай прошлый вариант после изменений.</span></div></div>
+    </section>
+
+    <section id="screens" class="showcase">
+      <div class="section-shell showcase-head reveal"><div><p class="section-label">06 — ПРИЛОЖЕНИЕ</p><h2>Всё уже<br><span>работает.</span></h2></div><p>Основные функции собраны в привычном мобильном интерфейсе.</p></div>
+      <div class="screen-grid section-shell">
+        <figure class="screen-shot reveal"><img src="assets/screens/chat-create.jpg" alt="Создание заметки в чате Anix"><figcaption><b>Заметки</b><span>Создание голосом и текстом</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/chat-search.jpg" alt="Поиск заметок в чате Anix"><figcaption><b>Поиск</b><span>Подходящие записи по смыслу запроса</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/chat-update.jpg" alt="Обновление заметки в чате Anix"><figcaption><b>Редактирование</b><span>Изменение заметки обычной фразой</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/analysis-chat.jpg" alt="Запуск анализа в чате Anix"><figcaption><b>Запуск анализа</b><span>Запрос прямо в чате</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/analysis-progress.jpg" alt="Анализ заметок выполняется"><figcaption><b>Фоновая работа</b><span>Приложением можно пользоваться во время анализа</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/insight-example.jpg" alt="Пример персонального инсайта Anix"><figcaption><b>Личный инсайт</b><span>Короткий вывод по заметкам за выбранный период</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/notifications.jpg" alt="Уведомления Anix"><figcaption><b>Уведомления</b><span>Сообщают о готовом анализе и новых инсайтах</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/analysis-result.jpg" alt="Результат анализа Anix"><figcaption><b>Анализ</b><span>Подробный разбор выбранного периода</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/analysis-detail.jpg" alt="Подробный текст анализа Anix"><figcaption><b>Подробный вывод</b><span>Темы, периоды и найденные изменения</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/analysis-sources.jpg" alt="Источники анализа Anix"><figcaption><b>Источники</b><span>Заметки, на которых основан вывод</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/notes-list.jpg" alt="Список заметок Anix"><figcaption><b>Все заметки</b><span>Поиск, фильтры и цветные теги</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/note-detail.jpg" alt="Открытая заметка Anix"><figcaption><b>Открытая заметка</b><span>Категории, теги и работа через чат</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/history.jpg" alt="История изменений заметки Anix"><figcaption><b>История версий</b><span>Просмотр и восстановление изменений</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/export.jpg" alt="Экспорт заметок Anix"><figcaption><b>Экспорт</b><span>Все заметки в Markdown или PDF</span></figcaption></figure>
+        <figure class="screen-shot reveal"><img src="assets/screens/settings.jpg" alt="Настройки Anix"><figcaption><b>Настройки</b><span>Тема, озвучка, уведомления и данные</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="quote section-shell reveal"><img src="assets/anix-logo.png" alt=""><blockquote>«Хорошая память хранит факты.<br><em>Anix помогает увидеть в них себя.</em>»</blockquote></section>
+
+    <section id="access" class="access section-shell reveal">
+      <div class="access-glow"></div>
+      <div class="access-content"><p class="section-label">07 — РАННИЙ ДОСТУП</p><h2>Попробуй Anix<br><span>до релиза.</span></h2><p>Идёт набор на закрытое тестирование. Подробности и новости публикуем в канале Anix.</p>
+        <div class="contact-actions"><a class="button primary" href="https://t.me/anix_memory" target="_blank" rel="noopener">Перейти в канал <b>↗</b></a><a class="button telegram" href="mailto:andrey.kazantsev.04@inbox.ru">Написать на почту <b>↗</b></a></div>
+      </div>
+      <div class="access-card"><span class="status"><i></i> Набор открыт</span><h3>Закрытый тест</h3><ul><li>Ранний доступ к приложению</li><li>Прямой контакт с разработчиком</li><li>Возможность влиять на функции</li></ul><a href="https://t.me/anix_memory" target="_blank" rel="noopener">Следить за разработкой в канале <span>→</span></a></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand"><img src="assets/anix-logo.png" alt=""><span>ANIX</span></div><p>Заметки, поиск, инсайты и анализ.</p><div class="footer-links"><a href="mailto:andrey.kazantsev.04@inbox.ru">Почта</a><a href="https://t.me/anix_memory" target="_blank" rel="noopener">Канал Anix</a></div><small>© 2026 Anix</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
