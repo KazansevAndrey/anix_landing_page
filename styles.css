@@ -20,3 +20,4 @@ html{overflow-x:hidden}body{width:100%}
 @media(max-width:560px){.features{padding-bottom:0}.features+.product-focus{padding-top:12px}}
 @media(max-width:560px){.screen-grid{grid-template-columns:1fr;max-width:310px;width:100%;gap:42px;margin-inline:auto}.screen-shot img{width:280px;max-width:100%}.screen-shot figcaption{width:280px;max-width:100%}}
 @media(min-width:901px){.statement{padding:120px 0 72px}.statement-grid{margin-top:48px}.features{gap:14px;padding-bottom:0}.features+.product-focus{padding-top:14px}.product-focus{gap:14px;padding-bottom:0}.how{padding:120px 0 0}.how-title{margin-bottom:56px}.principles{margin-top:64px}.showcase{padding:120px 0}.screen-grid{margin-top:56px}.quote{padding:120px 0}.access{margin-bottom:80px}}
+@media(min-width:901px){.how{padding-bottom:64px}.showcase{padding-top:64px}}
